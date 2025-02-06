@@ -1,0 +1,20 @@
+# Ignore target folder and compiled Java files
+target/
+*.class
+*.jar
+*.war
+
+# Ignore IntelliJ and Eclipse files
+*.iml
+*.idea/
+*.project
+*.settings/
+*.classpath
+
+# Ignore node_modules and build folder
+frontend/node_modules/
+frontend/build/
+
+# Ignore environment files
+frontend/.env
+
