@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import RoomResult from "../common/RoomResult";
 import RoomSearch from "../common/RoomSearch";
 
-
-
-
 const HomePage = () => {
 
     const [roomSearchResults, setRoomSearchResults] = useState([]);
@@ -23,7 +20,7 @@ const HomePage = () => {
                     <div className="overlay"></div>
                     <div className="animated-texts overlay-content">
                         <h1>
-                            Welcome to <span className="phegon-color">Amay Hotels</span>
+                            Welcome to <span className="amay-color">Amay Hotels</span>
                         </h1><br />
                         <h3>Step into a haven of comfort and care</h3>
                     </div>
@@ -36,7 +33,7 @@ const HomePage = () => {
 
             <h4><a className="view-rooms-home" href="/rooms">All Rooms</a></h4>
 
-            <h2 className="home-services">Services at <span className="phegon-color">Phegon Hotel</span></h2>
+            <h2 className="home-services">Services at <span className="amay-color">Amay Hotels</span></h2>
 
             {/* SERVICES SECTION */}
             <section className="service-section"><div className="service-card">
