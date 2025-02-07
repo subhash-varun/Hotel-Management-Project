@@ -96,7 +96,7 @@ POST /auth/login
 #### Request Body
 ```json
 {
-  "username": "admin",
+  "email": "admin@gmail.com",
   "password": "password123"
 }
 ```
