@@ -33,7 +33,7 @@ public class UserController {
 
     @DeleteMapping("/delete/{userId}")
     @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<Response> deleteUSer(@PathVariable("userId") String userId) {
+    public ResponseEntity<Response> deleteUser(@PathVariable("userId") String userId) {
         Response response = userService.deleteUser(userId);
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
