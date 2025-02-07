@@ -1,6 +1,5 @@
 package com.varun.AmayHotels.controller;
 
-
 import com.varun.AmayHotels.dto.Response;
 import com.varun.AmayHotels.service.interfac.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,6 +52,4 @@ public class UserController {
         Response response = userService.getUserBookingHistory(userId);
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
-
-
 }

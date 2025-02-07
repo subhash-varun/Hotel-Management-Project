@@ -48,6 +48,4 @@ public class BookingController {
         Response response = bookingService.cancelBooking(bookingId);
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
-
-
 }
