@@ -18,8 +18,7 @@ This is a Hotel Management System built using Spring Boot for the backend and Re
 - AWS S3 for Image Storage
 
 ### Frontend
-- React + React Router
-- Tailwind CSS (for styling)
+- React
 - Axios (for API calls)
 
 ## Installation & Setup
@@ -64,6 +63,32 @@ The frontend will start at: `http://localhost:3000`
 ## Authentication (JWT)
 This project uses JWT (JSON Web Token) for authentication.
 
+### Register API
+```http
+POST /auth/register
+```
+#### Admin Registration
+```json
+{
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "phoneNumber": "1234567890",
+  "password": "password123",
+  "role": "ADMIN"
+}
+```
+#### User Registration
+```json
+{
+  "name": "Regular User",
+  "email": "user@example.com",
+  "phoneNumber": "1234567890",
+  "password": "password123"
+}
+```
+Note: For regular users, the role field is optional and defaults to "USER".
+
+[Rest of the content remains the same]
 ### Login API
 ```http
 POST /auth/login
@@ -130,24 +155,6 @@ GET /rooms/available-rooms-by-date-and-type?checkInDate=2025-02-12&checkOutDate=
 #### Example for booking a room:
 ```http
 POST /bookings/book-room/2/8
-```
-
-## AWS S3 Integration for Image Upload
-
-### Uploading an Image
-```http
-POST /api/images/upload
-```
-#### Request (Form Data)
-| Key | Value (Type) |
-|-----|-------------|
-| file | Image File |
-
-#### Response
-```json
-{
-  "imageUrl": "https://your-bucket.s3.amazonaws.com/your-image.jpg"
-}
 ```
 
 ## Contribution Guide
